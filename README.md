@@ -1,4 +1,4 @@
-```markdown
+
 # Ollama Chatbot
 
 A private AI chatbot powered by Ollama, running locally on your machine.
