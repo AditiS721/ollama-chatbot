@@ -81,7 +81,7 @@ Your private AI assistant is now ready to use.
 - 🏠 **Fully Local** - All processing happens on your machine
 - 🔒 **Private** - No data sent to external servers
 - 💬 **Text Chat** - Conversational AI with context awareness
-- 🖼️ **Image Understanding** - Describe and analyze images (requires llava model)
+- 🖼️ **Image Understanding** - Describe and analyze images 
 - 🎨 **Clean Interface** - User-friendly Gradio web UI
 
 ## Troubleshooting
