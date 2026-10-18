@@ -1,107 +1,97 @@
+<div align="center">
 
-# Ollama Chatbot
+# 🌾 DharaDrishti · धरादृष्टि
+### Vision of the Earth. A Voice for Every Farmer.
 
-A private AI chatbot powered by Ollama, running locally on your machine.
+**Your field. Your language. Your farming companion.**
 
-## Prerequisites
+Voice-first, field-specific guidance for Indian farmers — from sowing decisions to harvest records.
 
-- Python 3.8 or higher
-- [Ollama](https://ollama.com/download) installed on your system
-- At least 6GB of free disk space (for models)
+🗣️ **10 Languages** · 🛰️ **Satellite Mapping** · 🌱 **Smarter Farm Decisions**
 
-## Installation
+</div>
 
-### 1. Clone the Repository
+---
+
+## 🌱 Farming Guidance, Just a Conversation Away
+
+Technology should feel as familiar as talking to a neighbour.
+
+DharaDrishti brings crop care, weather insights, and farm planning together in a voice-accessible platform designed for farmers with limited literacy or technical experience.
+
+> 🎤 **“खेत दिखाओ”** → View your fields  
+> 💧 **“क्या पानी दूं?”** → Get irrigation advice  
+> 🔬 **“पत्ती जांचो”** → Start a leaf inspection  
+> 🌾 **“२५ क्विंटल गेहूं काटा”** → Record your harvest  
+
+## 🌻 From Field to Harvest
+
+```mermaid
+flowchart TD
+    A["🎤 Speak in your language"] --> B["🌾 DharaDrishti"]
+    B --> C["🗺️ Know your field"]
+    B --> D["🌱 Care for your crop"]
+    B --> E["💰 Plan your returns"]
+    C --> F["Satellite boundaries • Acreage • Crop plots"]
+    D --> G["Disease checks • Watering advice • Weather alerts"]
+    E --> H["Mandi prices • Profit estimates • Harvest ledger"]
+```
+
+| | Feature | What it helps you do |
+|---|---|---|
+| 🗺️ | **My Fields** | Map boundaries by GPS or satellite, calculate acreage, and manage crop plots. |
+| 🔬 | **Crop Doctor** | Inspect leaf photos for disease, review severity, and explore remedies with KVK escalation. |
+| 💧 | **Water & Nutrients** | Plan irrigation around weather and estimate fertiliser needs using soil NPK values. |
+| 💰 | **Mandi & Margins** | Compare market prices and explore low, expected, and high net-profit estimates. |
+| ⛅ | **Weather Watch** | Check a 7-day forecast and plan watering or spraying around conditions. |
+| 📊 | **Fasal Score** | Track farm health with a transparent 0–100 score and record harvests by voice. |
+| 💬 | **Kisan AI** | Ask farm-specific questions with ICAR/KVK-backed guidance. |
+
+## 🗣️ Many Languages. One Shared Ground.
+
+**हिन्दी** · English · ਪੰਜਾਬੀ · தமிழ் · తెలుగు  
+मराठी · ગુજરાતી · বাংলা · ಕನ್ನಡ · മലയാളം
+
+Hindi is the default language, with voice input and spoken responses supporting the farmer’s chosen language.
+
+## 🎨 Colours Rooted in the Land
+
+| 🌲 Forest | 🌿 Leaf | 🌾 Wheat | 🌅 Harvest |
+|:---:|:---:|:---:|:---:|
+| `#186049` | `#4A943E` | `#ECE8AF` | `#B98327` |
+
+## 🛠️ Built With
+
+**Next.js 14+** · **Tailwind CSS** · **Leaflet** · **Esri World Imagery**  
+**Web Speech API** · **Geodesic Shoelace & Haversine** · **Canvas Confetti**
+
+## 🚀 Plant the First Seed
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/ollama-chatbot.git
-cd ollama-chatbot
+# Install dependencies
+npm install
+
+# Start development
+npm run dev
 ```
 
-### 2. Set Up Virtual Environment
+Visit [localhost:3000](http://localhost:3000).
 
-**Windows:**
-```cmd
-python -m venv chatbot_env
-chatbot_env\Scripts\activate
-```
-
-**Mac/Linux:**
 ```bash
-python3 -m venv chatbot_env
-source chatbot_env/bin/activate
+# Build and run for production
+npm run build
+npm start
 ```
 
-### 3. Install Dependencies
+## 📄 License
 
-```cmd
-pip install -r requirements.txt
-```
+MIT License · Built for a hackathon, inspired by Indian agriculture.
 
-### 4. Pull AI Models
+---
 
-```cmd
-# Required: Text chat model (~1.5GB)
-ollama pull llama3.2:1b
+<div align="center">
 
-# Optional: Image understanding model (~4GB)
-ollama pull llava:7b
-```
+**धरती की समझ, किसान की आवाज़।**  
+*Understanding the land. Amplifying the farmer’s voice.*
 
-### 5. Start Ollama Service
-
-Open a new terminal and run:
-
-```cmd
-ollama serve
-```
-
-Keep this terminal running in the background.
-
-### 6. Launch the Chatbot
-
-In your first terminal (with virtual environment activated):
-
-```cmd
-python basic_chatbot.py
-```
-
-### 7. Access the Chatbot
-
-- Open any web browser (Chrome, Firefox, Edge, Safari)
-- Go to: **http://127.0.0.1:7860**
-- The chat interface will appear with a text box
-- Type your message and press Enter to start chatting
-- The AI will respond within a few seconds
-
-Your private AI assistant is now ready to use.
-
-## Features
-
-- 🏠 **Fully Local** - All processing happens on your machine
-- 🔒 **Private** - No data sent to external servers
-- 💬 **Text Chat** - Conversational AI with context awareness
-- 🖼️ **Image Understanding** - Describe and analyze images 
-- 🎨 **Clean Interface** - User-friendly Gradio web UI
-
-## Troubleshooting
-
-- **Ollama not found**: Make sure Ollama is installed and added to your PATH
-- **Port in use**: Change the port in `basic_chatbot.py` if 7860 is occupied
-- **Slow responses**: First message may be slower as the model loads
-- **Model errors**: Ensure you've pulled the required models with `ollama pull`
-
-## Requirements
-
-```
-gradio
-ollama
-Pillow
-```
-
-## License
-
-This project is open source and available under the MIT License.
-```
-
-All steps now follow the same format with consistent code blocks, clear headings, and OS-specific instructions where needed.
+</div>
